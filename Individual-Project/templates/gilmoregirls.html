@@ -1,0 +1,57 @@
+            
+<head>
+
+
+
+
+<style>
+
+.font = {font-size: 500px;}
+#color {color: pink;}
+</style>
+
+
+
+
+
+</head>
+
+<body>
+            <li><a href="/home2">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/movies">Movies</a></li>
+            <li><a href="/signout">Sign out</a></li>
+   <div>
+
+
+
+                <a href = "/gilmoregirls"> 
+                <button type="submit">
+        <img src="https://i.pinimg.com/736x/05/d4/d3/05d4d3c3679baf538437651c66082df9.jpg" width = "400" height = "600" alt="buttonpng" border="0">
+      </button>
+  </a></div>
+
+<h1 id = "color">The show follows single mother Lorelai Gilmore and her daughter, also named Lorelai - who prefers to go by Rory living in the fictional town of Stars Hollow, Connecticut. This is a small town filled with colorful characters, which is located approximately 30 minutes from Hartford, Connecticut. Ambition, education, and work constitute part of the series' central concerns, telling Lorelai's story from pregnant teen runaway and high school dropout to successful business woman who is a prominent part of the inn industry.</h1>
+
+<form method= "POST" action = "/gilmoregirls">
+
+<input type = "text" name= "comment" placeholder="comment">
+<input type="submit">
+
+
+
+
+
+
+</form>
+
+
+{% for id in comments %}
+<li>{{comments[id]}}</li>
+{%endfor%}
+
+
+
+
+
+</body>
